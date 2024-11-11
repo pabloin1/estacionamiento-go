@@ -1,9 +1,16 @@
 package main
 
 import (
-    "main/interfaces"
+	"fmt"
+	"main/ui"
 )
 
 func main() {
-    interfaces.IniciarGUI()
+	fmt.Println("Iniciando Parking Simulator...")
+
+	appUI := ui.NewAppUI()
+	fmt.Println("Interfaz principal iniciada.")
+
+	appUI.Start()
+	fmt.Println("Aplicación en ejecución.")
 }
